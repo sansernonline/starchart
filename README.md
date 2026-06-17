@@ -1,45 +1,50 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# StarChart — ดีไซน์ & Asset
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+> Repository รวบรวม **asset กราฟิก** และ **prototype** สำหรับแอป StarChart — ระบบ "ตารางดาว/ให้รางวัล" ธีมห้องเรียน (อยู่ในขั้นออกแบบ ยังไม่เริ่มพัฒนาโค้ด)
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
-
----
-
-## Edit a file
-
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
-
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+![Stage](https://img.shields.io/badge/Stage-Design%20%2F%20Prototype-orange)
+![Type](https://img.shields.io/badge/Type-Assets%20%26%20Mockups-blue)
 
 ---
 
-## Create a file
+## ภาพรวม
 
-Next, you’ll add a new file to this repository.
+Repository นี้เป็นพื้นที่เก็บ **สื่อกราฟิกและต้นแบบ (prototype)** ของแอป StarChart ยังไม่มีโค้ดโปรแกรม เนื้อหาหลักคือชุด UI asset และ asset ธีมห้องเรียน/ตารางเรียนที่เตรียมไว้ใช้ในขั้นพัฒนา รวมถึงไฟล์ต้นแบบที่ออกแบบด้วย Axure RP
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+> ⚠️ **หมายเหตุ:** ไฟล์ต้นแบบจริง (`.rp`) ยังไม่ได้ commit เข้ามา — ใน `document/` มีเพียง shortcut (`.lnk`) ที่ชี้ไปยังไฟล์บนเครื่องเดิม ควรเพิ่มไฟล์ `.rp` ตัวจริงหรือ export เป็น HTML/PDF เข้ามาแทน
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+## โครงสร้าง
 
----
+```
+starchart/
+├── asset/
+│   ├── FREEUIASSETPACK_BY@CAMTATZ/            # ชุด UI (ปุ่ม สไลเดอร์ checkbox ฯลฯ)
+│   └── Classroom-elements-with-school-timetable/  # กราฟิกธีมห้องเรียน + ตารางเรียน
+├── document/
+│   └── starchart-prototype.rp.lnk            # (shortcut) ต้นแบบ Axure RP
+└── README.md
+```
 
-## Clone a repository
+## Asset ที่ใช้ และเครดิต / ลิขสิทธิ์
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+โปรเจกต์นี้ใช้ asset จากบุคคลที่สาม โปรดคงเครดิตไว้เมื่อนำไปใช้:
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+| Asset Pack | ผู้สร้าง | License |
+|-----------|---------|---------|
+| Platformer / UI Asset Pack #4 | Cam Tatz ([@CamTatz](https://twitter.com/CamTatz)) | Public Domain (ใช้ได้ทั้งงานส่วนตัวและเชิงพาณิชย์) |
+| Classroom elements with school timetable | — | ตามไฟล์ License ในโฟลเดอร์ (ฟอนต์: **Amatic** by Vernon Adams) |
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+> ก่อนเผยแพร่/ใช้งานเชิงพาณิชย์ ควรตรวจสอบไฟล์ `License`, `free.txt`, `premium.txt` และ `Fonts.txt` ในแต่ละโฟลเดอร์ asset ให้แน่ใจว่าใช้ภายใต้เงื่อนไขที่ถูกต้อง
+
+## สถานะโปรเจกต์
+
+- [x] รวบรวม UI/graphic asset
+- [x] ออกแบบ prototype (Axure)
+- [ ] เพิ่มไฟล์ prototype ตัวจริงเข้า repo
+- [ ] เริ่มพัฒนาแอป
+
+## ขั้นตอนถัดไป (แนะนำ)
+
+1. นำไฟล์ `.rp` ตัวจริงเข้ามา หรือ export prototype เป็น HTML/PDF เพื่อให้คนอื่นเปิดดูได้โดยไม่ต้องมี Axure
+2. แยก asset ของบุคคลที่สามให้ชัด และเพิ่มไฟล์ `CREDITS.md`
+3. เพิ่มไฟล์ `LICENSE` สำหรับส่วนที่เป็นงานของโปรเจกต์เอง
